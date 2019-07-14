@@ -1,7 +1,6 @@
 require 'spec_helper'
 
-describe file('/etc/my.cnf') do
-    it { should contain "server-id = #{property[:server_id]}" }
+describe 'REQ:1,2' do
 
   describe port(8080) do
     it { should be_listening }

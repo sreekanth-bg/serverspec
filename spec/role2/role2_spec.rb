@@ -1,9 +1,8 @@
 require 'spec_helper'
 
-describe file('/etc/my.cnf') do
-    it { should contain "server-id = #{property[:server_id]}" }
+describe 'REQ:2' do
 
-  describe file('/home/sree') do
+  describe file('/home/tempuser/temp') do
     it { should be_directory }
   end
 

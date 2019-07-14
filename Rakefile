@@ -14,6 +14,9 @@ namespace :serverspec do
     RSpec::Core::RakeTask.new(key.split('.')[0].to_sym) do |t|
       ENV['TARGET_HOST'] = key
       t.pattern = 'spec/{' + properties[key][:roles].join(',') + '}/*_spec.rb'
+      t.rspec_opts = "--format documentation \
+      --format html --out /home/tempuser/tests.html \
+      --format json --out /home/tempuser/tests.json"
     end
   end
 end

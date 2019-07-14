@@ -1,9 +1,5 @@
 ---
-192.168.0.124:
+machine:
   :roles:
     - role1
-  :server_id: 1
-192.168.0.124:
-  :roles:
     - role2
-  :server_id: 2
