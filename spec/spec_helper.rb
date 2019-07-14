@@ -12,6 +12,6 @@ set_property properties[host]
 
 
 set :host, ENV['HOST']
-set :ssh_options, :user => 'tempuser', :port => 22, :password => 'tempuser'
+set :ssh_options, :user => 'xxxxx', :port => 22, :password => 'xxxxx'
 
 
